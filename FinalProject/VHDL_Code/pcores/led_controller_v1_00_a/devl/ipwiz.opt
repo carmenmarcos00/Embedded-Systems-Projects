@@ -1,0 +1,9 @@
+-batch 
+-create led_controller 
+-ver 1.00.a 
+-dir "C:\Users\cmarc\Desktop\ejercio32final" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 4 
+-xps 
+-ise 
