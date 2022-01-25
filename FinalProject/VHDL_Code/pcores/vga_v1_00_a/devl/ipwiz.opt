@@ -1,0 +1,9 @@
+-batch 
+-create vga 
+-ver 1.00.a 
+-dir "D:\Xilinx\Industriales\prueba_timer" 
+-lang vhdl 
+-bus plbv46 s 
+-mem 1 
+-xps 
+-ise 
