@@ -1,0 +1,57 @@
+#  Generic Template
+
+ ##LEDS
+ Net fpga_0_LEDS_GPIO_IO_O_pin<0> LOC=M5;
+ Net fpga_0_LEDS_GPIO_IO_O_pin<1> LOC=M11;
+ Net fpga_0_LEDS_GPIO_IO_O_pin<2> LOC=P7;
+ Net fpga_0_LEDS_GPIO_IO_O_pin<3> LOC=P6;
+ Net fpga_0_LEDS_GPIO_IO_O_pin<4> LOC=N5;
+ Net fpga_0_LEDS_GPIO_IO_O_pin<5> LOC=N4;
+ Net fpga_0_LEDS_GPIO_IO_O_pin<6> LOC=P4;
+ Net fpga_0_LEDS_GPIO_IO_O_pin<7> LOC=G1;
+ 
+ ##VGA
+ Net vga_0_HS_pin LOC=J14;
+ Net vga_0_VS_pin LOC=K13;
+ Net vga_0_RGB_pin<0> LOC=C14; ##RED0
+ Net vga_0_RGB_pin<1> LOC=D13;
+ Net vga_0_RGB_pin<2> LOC=F13;
+ Net vga_0_RGB_pin<3> LOC=F14;
+ Net vga_0_RGB_pin<4> LOC=G13;
+ Net vga_0_RGB_pin<5> LOC=G14;
+ Net vga_0_RGB_pin<6> LOC=H13;
+ Net vga_0_RGB_pin<7> LOC=J13;
+ 
+
+##7SEGMENTOS
+ Net led_controller_0_S_pin<7> LOC=L14;
+ Net led_controller_0_S_pin<6> LOC=H12;
+ Net led_controller_0_S_pin<5> LOC=N14;
+ Net led_controller_0_S_pin<4> LOC=N11;
+ Net led_controller_0_S_pin<3> LOC=P12;
+ Net led_controller_0_S_pin<2> LOC=L13;
+ Net led_controller_0_S_pin<1> LOC=M12;
+ Net led_controller_0_S_pin<0> LOC=N13;
+
+##AN
+ Net led_controller_0_AN_pin<0> LOC=F12;
+ Net led_controller_0_AN_pin<1> LOC=J12;
+ Net led_controller_0_AN_pin<2> LOC=M13;
+ Net led_controller_0_AN_pin<3> LOC=K14;
+ 
+##BOTONES
+ Net fpga_0_Push_Buttons_GPIO_IO_I_pin<0> LOC=G12;
+ Net fpga_0_Push_Buttons_GPIO_IO_I_pin<1> LOC=C11;
+ Net fpga_0_Push_Buttons_GPIO_IO_I_pin<2> LOC=M4;
+ Net fpga_0_Push_Buttons_GPIO_IO_I_pin<3> LOC=A7;
+ 
+Net fpga_0_clk_1_sys_clk_pin TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+ ##CLOCK
+ Net fpga_0_clk_1_sys_clk_pin LOC=M6;
+ 
+Net fpga_0_rst_1_sys_rst_pin TIG;
+
+ ##RESET
+ Net fpga_0_rst_1_sys_rst_pin LOC=N3;
